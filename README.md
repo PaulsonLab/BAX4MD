@@ -20,6 +20,24 @@ This repository contains code supporting the paper "MD-BAX: A General-Purpose Ba
 - scipy 1.13.1
 
 
+## Usage
+Our general-purpose framework can extend beyond tasks of level set estimation and manifold crawling shown in the paper. We provided the following *TaskHandler* class in [`bax.py`](./src/bax.py) as a template which can be easily adapted to customized tasks.
+```sh
+class TaskHandler:
+    def __init__(self, task_kwargs):
+        self.task_kwargs = task_kwargs
+
+    def algorithm(self, sample_Y, max_var_indices):
+        pass
+
+    def get_valid_indices(self, bax, X, sample_Y, pred_Ymean, pred_Yvar, X1_range, X2_range, max_var_indices):
+        raise NotImplementedError
+
+    def post_step(self, bax, **kwargs):
+        pass
+```
+
+
 ## Citation
 ```
 @article{
