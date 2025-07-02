@@ -1,5 +1,5 @@
 # BAX4MD
-This repository contains code supplementing the paper "MD-BAX: A General-Purpose Bayesian Design Framework for Molecular Dynamics Simulations with Input-Dependent Noise".
+This repository contains code supporting the paper "MD-BAX: A General-Purpose Bayesian Design Framework for Molecular Dynamics Simulations with Input-Dependent Noise".
 
 ## Overview
 - `branin/` contains UQ calibration results based on a synthetic problem with varying levels of input-dependent noise.
