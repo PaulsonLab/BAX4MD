@@ -21,7 +21,7 @@ This repository contains code supporting the paper "MD-BAX: A General-Purpose Ba
 
 
 ## Usage
-Our general-purpose framework can extend beyond tasks of level set estimation and manifold crawling shown in the paper. We provided the following *TaskHandler* class in [`bax.py`](./src/bax.py) as a template which can be easily adapted to customized tasks.
+Our general-purpose framework can extend beyond tasks of level set estimation and manifold crawling shown in the paper. We provided the following *TaskHandler* class in [`bax.py`](./src/bax.py) as a template which can be easily adapted to customized tasks for MD simulation experiment design.
 ```sh
 class TaskHandler:
     def __init__(self, task_kwargs):
