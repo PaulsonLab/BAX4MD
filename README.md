@@ -22,7 +22,7 @@ This repository contains code supplementing the paper "MD-BAX: A General-Purpose
 
 ## Citation
 ```
-@article{,
+@article{
 author = {Tianhong Tan, Ting-Yeh Chen, Jacob R. Breese, Lisa M. Hall, Joel A. Paulson},
 title = {MD-BAX: A General-Purpose Bayesian Design Framework for Molecular Dynamics Simulations with Input-Dependent Noise},
 journal = {},
