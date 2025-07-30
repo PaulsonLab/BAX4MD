@@ -21,6 +21,13 @@ This repository contains code supporting the paper "MD-BAX: A General-Purpose Ba
 
 
 ## Usage
+To efficiently obtain meaningful statistical performance results, we used a pseudo simulator that directly reads the pre-computed real simulation outcomes from the data files when given specified inputs on a predefined grid. The  [`copolymer_simulator.py`](./src/copolymer_simulator.py) file can be adapted to a real simulator seamlessly integrated with our framework.
+```sh
+from copolymer_simulator import Simulator
+simulator = Simulator(polymer='diblock') # diblock case
+# simulator = Simulator(polymer='triblock') # triblock case
+```
+
 Our general-purpose framework can extend beyond tasks of level set estimation and manifold crawling shown in the paper. We provided the following *TaskHandler* class in [`bax.py`](./src/bax.py) as a template which can be easily adapted to customized tasks for MD simulation experiment design.
 ```sh
 class TaskHandler:
