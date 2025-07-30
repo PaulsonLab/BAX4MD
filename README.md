@@ -3,8 +3,8 @@ This repository contains code supporting the paper "MD-BAX: A General-Purpose Ba
 
 ## Overview
 - `branin/` contains UQ calibration results based on a synthetic problem with varying levels of input-dependent noise.
-- `data/copolymer/` contains the estimated Rg value and noise data for all the points in the parameter grid. We used this precomputed dataset for both UQ calibration analysis and case studies on BAX applications.
-- `examples/` contains notebooks illustrating two MD-BAX application: level set estimation and manifold crawling.
+- `data/` contains the estimated Rg value and noise data for all the points in the parameter grid. We used the precomputed diblock dataset for both UQ calibration analysis and case studies on BAX applications.
+- `examples/` contains notebooks illustrating two MD-BAX application: level set estimation (diblock) and manifold crawling (both diblock and triblock).
 - `src/` contains the source code for MD-BAX. [`UQtools.py`](./src/UQtools.py) was adapted from [https://github.com/jensengroup/UQ_validation_methods](https://github.com/jensengroup/UQ_validation_methods).
 - `uq_calibration` contains UQ calibration results based on MD simulation data.
 
