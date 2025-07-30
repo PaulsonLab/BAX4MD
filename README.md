@@ -24,6 +24,7 @@ This repository contains code supporting the paper "MD-BAX: A General-Purpose Ba
 To efficiently obtain meaningful statistical performance results, we used a pseudo simulator that directly reads pre-computed real simulation outcomes (both Rg value and estimated noise) from data files when given specified inputs on a predefined grid. The *Simulator* class in [`copolymer_simulator.py`](./src/copolymer_simulator.py) can be adapted to a real simulator and seamlessly integrated with our framework.
 ```sh
 from copolymer_simulator import Simulator
+
 simulator = Simulator(polymer='diblock') # diblock case
 # simulator = Simulator(polymer='triblock') # triblock case
 ```
