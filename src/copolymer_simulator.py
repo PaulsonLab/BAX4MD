@@ -2,9 +2,12 @@ import torch
 import pandas as pd
 
 
-class Simulator:
-    def __init__(self):
-        self.data_table = pd.read_csv('../data/copolymer/copolymer_data_all.csv')
+class Simulator():
+    def __init__(self, polymer):
+        if polymer == 'diblock':
+            self.data_table = pd.read_csv('../data/diblock/diblock.csv')
+        elif polymer == 'triblock':
+            self.data_table = pd.read_csv('../data/triblock/triblock.csv')
 
     
     def run(self, X):
